@@ -50,10 +50,10 @@ You can apply one or more style classes such as:
 + `dashed-border` ` `solid-border`
 + `primary` , `secondary` , `tertiary`
 
-<iframe src="https://trinket.io/embed/html/886cbdcb64?outputOnly=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+<iframe src="https://trinket.io/embed/html/886cbdcb64?toggleCode=true" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
 
 --- print-only ---
 
-![A strip of example flip cards](images/flip-examples.png)
+![A strip of example flip cards](images/flip-example.png)
 
 --- /print-only ---
