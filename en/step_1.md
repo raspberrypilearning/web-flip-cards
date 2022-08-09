@@ -47,7 +47,7 @@ You can apply one or more style classes, such as:
 + `rounded`
 + `xcenter` , `ycenter`
 + `gradient1` , `gradient2`
-+ `dashed-border` ` `solid-border`
++ `dashed-border`, `solid-border`
 + `primary` , `secondary` , `tertiary`
 
 <iframe src="https://trinket.io/embed/html/886cbdcb64?toggleCode=true" width="100%" height="300" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
