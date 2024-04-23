@@ -20,11 +20,11 @@ line_numbers: false
     <div class="card"> <!-- The card -->
         <div class="card-content"> <!-- To control the flip -->
             <div class="card-face"> <!-- The front card face -->
-              
+            <!-- Add your front card content here including images, text etc -->
             </div>
           
             <div class="card-face flipme"> <!-- The back card face -->
-              
+            <!-- Add your back card content here including images, text etc -->
             </div>
         </div>
     </div>
@@ -50,7 +50,30 @@ You can apply one or more style classes, such as:
 + `dashed-border`, `solid-border`
 + `primary` , `secondary` , `tertiary`
 
-<iframe src="https://staging-editor.raspberrypi.org/en/embed/viewer/web-flip-cards-example" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
+An example on how to do this is shown below:
+
+--- code ---
+---
+language: html
+filename: index.html
+line_numbers: false
+
+---
+     <div class="card">
+            <div class="card-content">
+              <div class="card-face gradient1 rounded shadow">
+                <img src="LapisSarawak02.png" alt="Lapis Sarawak" />
+              </div>
+              <div class="card-face flipme gradient2 rounded ycenter shadow">
+                <h2>Lapis Sarawak</h2>
+                <p>A cake baked in layers to make colourful patterns.</p>
+              </div>
+            </div>
+        </div>
+
+--- /code ---
+
+<iframe src="https://editor.raspberrypi.org/en/embed/viewer/web-flip-cards-example" width="600" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen> </iframe>
 
 --- print-only ---
 
