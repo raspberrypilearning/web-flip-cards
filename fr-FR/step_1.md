@@ -1,15 +1,15 @@
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Flip cards**</span> help people interact with a webpage. They also allow you to provide additional information in a small space or hide information that shouldn't be immediately visible. Some common examples of animated flip cards are revision cards, business cards, social media contact cards, and product cards. 
+<span style="color: #0faeb0">**Les cartes à retourner**</span> aident les gens à interagir avec une page web. Elles te permettent également de fournir des informations supplémentaires dans un espace réduit ou de cacher des informations qui ne devraient pas être directement visibles. Quelques exemples courants de cartes à retourner animées sont les cartes de révision, les cartes de visite, les cartes de contact des réseaux sociaux et les cartes de produits. 
 </p>
 
-A flip card has four main parts:
+Une carte à retourner comporte quatre parties principales :
 
-- The card itself
-  - The flip control
-    - The front card face
-    - The back card face
+- La carte elle-même
+  - Le contrôle de retournement
+    - Le recto de la carte
+    - Le verso de la carte
 
-Add this code to `index.html` to position your card on the webpage:
+Ajoute ce code à `index.html` pour positionner ta carte sur la page web :
 
 ## --- code ---
 
@@ -21,13 +21,13 @@ line_numbers: false
 
 ```
 <div class="card"> <!-- The card -->
-    <div class="card-content"> <!-- To control the flip -->
-        <div class="card-face"> <!-- The front card face -->
-        <!-- Add your front card content here including images, text etc -->
+    <div class="card-content"> <!-- Pour contrôler le retournement -->
+        <div class="card-face"> <!-- Le recto de la carte -->
+        <!-- Ajoute ici le contenu de ta carte de visite, y compris les images, le texte, etc -->
         </div>
       
-        <div class="card-face flipme"> <!-- The back card face -->
-        <!-- Add your back card content here including images, text etc -->
+        <div class="card-face flipme"> <!-- Le verso de la carte -->
+        <!-- Ajoute ici le contenu de ta carte de visite, y compris les images, le texte, etc -->
         </div>
     </div>
 </div>
@@ -35,20 +35,20 @@ line_numbers: false
 
 \--- /code ---
 
-The flip card uses four CSS classes:
+La carte à retourner utilise quatre classes CSS :
 
-- `card`: sets the size of the card
-- `card-content`: controls the flip timing, perspective, and effect
-- `card-face`: hides the face when it is flipped to the back
-- `flipme`: flips the second card face 180 degrees on the y-axis so it is flipped in the opposite direction to the front card face
+- `card`: définit la taille de la carte
+- `card-content` : contrôle le timing, la perspective et l'effet de retournement
+- `card-face`: cache la face de la carte lorsqu'elle est tournée vers l'arrière
+- `flipme`: retourne la deuxième face de la carte de 180 degrés sur l'axe des y, de manière à ce qu'elle soit retournée dans la direction opposée à la première face de la carte
 
-The `card-content` class rotates 180 degrees on the y-axis when hovered over, which means the two card faces switch position.
+La classe `card-content` pivote de 180 degrés sur l'axe y lorsqu'elle est survolée, ce qui signifie que les deux faces de la carte changent de position.
 
-## Customise the card faces
+## Personnaliser les faces de la carte
 
-You can add text (including emojis), images, quotes, or lists to your card faces.
+Tu peux ajouter du texte (y compris des emojis), des images, des citations ou des listes aux faces de tes cartes.
 
-You can apply one or more style classes, such as:
+Tu peux appliquer une ou plusieurs classes de style, par exemple :
 
 - `rounded`
 - `xcenter` , `ycenter`
@@ -56,7 +56,7 @@ You can apply one or more style classes, such as:
 - `dashed-border`, `solid-border`
 - `primary` , `secondary` , `tertiary`
 
-An example on how to do this is shown below:
+Un exemple de la manière de procéder est présenté ci-dessous :
 
 ## --- code ---
 
@@ -74,7 +74,7 @@ line_numbers: false
           </div>
           <div class="card-face flipme gradient2 rounded ycenter shadow">
             <h2>Lapis Sarawak</h2>
-            <p>A cake baked in layers to make colourful patterns.</p>
+            <p>Un gâteau cuit en couches pour créer des motifs colorés.</p>
           </div>
         </div>
     </div>
@@ -86,6 +86,6 @@ line_numbers: false
 
 \--- print-only ---
 
-![A strip of example flip cards.](images/flip-example.png)
+![Une bande d'exemples de cartes à retourner.](images/flip-example.png)
 
 \--- /print-only ---
