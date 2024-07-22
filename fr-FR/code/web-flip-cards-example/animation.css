@@ -36,12 +36,12 @@
 }
 
 .scaleme {
-  animation: scale ease 2s infinite; /* runs the 'scale' animation with ease timing (slow start and end) over a two second interval. Runs the animation forever. */
+  animation: scale ease 2s infinite; /* exécute l'animation 'scale' avec un timing facile (début et fin lents) sur un intervalle deux secondes. Exécute l'animation indéfiniment. */
   display: inline-block;
 }
 
 @keyframes scale {
-  /* The twinkle animation code */
+  /* Le code d'animation de scintillement */
   0% {
     transform: scale(1, 1);
   }
@@ -65,7 +65,7 @@
 }
 
 @keyframes rollleft {
-  /* The roll animation code */
+  /* Le code de l'animation du roulement */
   from {
     transform: translate(-60vw) rotate(0deg);
     transform-origin: center;
@@ -83,7 +83,7 @@
 }
 
 @keyframes rollright {
-  /* The roll animation code */
+  /* Le code de l'animation du roulement */
   from {
     transform: translate(60vw) rotate(360deg);
     transform-origin: center;
@@ -105,7 +105,7 @@
 }
 
 @keyframes moveleft {
-  /* The roll animation code */
+  /* Le code de l'animation du roulement */
   from {
     transform: translate(-60vw);
     transform-origin: center;
@@ -123,7 +123,7 @@
 }
 
 @keyframes moveright {
-  /* The roll animation code */
+  /* Le code de l'animation du roulement */
   from {
     transform: translate(60vw);
     transform-origin: center;
