@@ -1,15 +1,15 @@
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Flip cards**</span> help people interact with a webpage. They also allow you to provide additional information in a small space or hide information that shouldn't be immediately visible. Some common examples of animated flip cards are revision cards, business cards, social media contact cards, and product cards. 
+<span style="color: #0faeb0">**Flip cards**</span> helpen mensen bij interactie met een webpagina. Ze maken het ook mogelijk om extra informatie in een kleine ruimte weer te geven of te verbergen zodat deze niet direct zichtbaar is. Sommige veel voorkomende voorbeelden van geanimeerde flip cards zijn revisie-kaarten, visitekaartjes, contactkaarten voor sociale media en productkaarten. 
 </p>
 
-A flip card has four main parts:
+Een flipcard bestaat uit vier hoofdonderdelen:
 
-- The card itself
-  - The flip control
-    - The front card face
-    - The back card face
+- De kaart zelf
+  - De flip-control
+    - De voorkant van de kaart
+    - De achterkant van de kaart
 
-Add this code to `index.html` to position your card on the webpage:
+Voeg deze code toe aan `index.html` om je kaart op de webpagina te plaatsen:
 
 ## --- code ---
 
@@ -20,14 +20,14 @@ line_numbers: false
 ---
 
 ```
-<div class="card"> <!-- The card -->
-    <div class="card-content"> <!-- To control the flip -->
-        <div class="card-face"> <!-- The front card face -->
-        <!-- Add your front card content here including images, text etc -->
+<div class="card"> <!-- De kaart -->
+    <div class="card-content"> <! - Om de draaien -->
+        <div class="card-face"> <! - De voorkant van de kaart-->
+        <! - Voeg hier jouw inhoud toe voor de voorkant, inclusief afbeeldingen, tekst enz -->
         </div>
       
-        <div class="card-face flipme"> <!-- The back card face -->
-        <!-- Add your back card content here including images, text etc -->
+        <div class="card-face flipme"> <! - De achterkant van de kaart -->
+        <! - Voeg hier je inhoud toe voor de achterkant, inclusief afbeeldingen, tekst enz -->
         </div>
     </div>
 </div>
@@ -35,28 +35,28 @@ line_numbers: false
 
 \--- /code ---
 
-The flip card uses four CSS classes:
+De flip card gebruikt vier CSS-klassen:
 
-- `card`: sets the size of the card
-- `card-content`: controls the flip timing, perspective, and effect
-- `card-face`: hides the face when it is flipped to the back
-- `flipme`: flips the second card face 180 degrees on the y-axis so it is flipped in the opposite direction to the front card face
+- `card`: stelt de grootte van de kaart in
+- `card-content`: regelt de flip-timing, het perspectief en het effect
+- `card-face`: verbergt de eerste kant wanneer deze naar achteren wordt gedraaid
+- `flipme`: draait de tweede kaartzijde 180 graden om de y-as, zodat deze in de tegenovergestelde richting van de voorste kaartzijde wordt gedraaid
 
-The `card-content` class rotates 180 degrees on the y-axis when hovered over, which means the two card faces switch position.
+De klasse `card-content` draait 180 graden om de y-as wanneer je erover zweeft met je muis, wat betekent dat de twee kaartvlakken van positie wisselen.
 
-## Customise the card faces
+## Pas de voor- en achterkant van de kaart aan
 
-You can add text (including emojis), images, quotes, or lists to your card faces.
+Je kunt tekst (inclusief emojis), afbeeldingen, citaten of lijsten aan je kaart toevoegen.
 
-You can apply one or more style classes, such as:
+Je kunt een of meer stijlen toepassen zoals:
 
 - `rounded`
 - `xcenter` , `ycenter`
-- `gradient1` , `gradient2`
+- `gradient1`, `gradient2`
 - `dashed-border`, `solid-border`
 - `primary` , `secondary` , `tertiary`
 
-An example on how to do this is shown below:
+Hieronder zie je een voorbeeld van hoe je dit kunt doen:
 
 ## --- code ---
 
@@ -74,7 +74,7 @@ line_numbers: false
           </div>
           <div class="card-face flipme gradient2 rounded ycenter shadow">
             <h2>Lapis Sarawak</h2>
-            <p>A cake baked in layers to make colourful patterns.</p>
+            <p>Een cake die in lagen wordt gebakken om kleurrijke patronen te maken.</p>
           </div>
         </div>
     </div>
@@ -86,6 +86,6 @@ line_numbers: false
 
 \--- print-only ---
 
-![A strip of example flip cards.](images/flip-example.png)
+![Een strook met voorbeeld-flipcards.](images/flip-example.png)
 
 \--- /print-only ---
