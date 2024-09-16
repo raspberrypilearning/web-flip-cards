@@ -1,4 +1,4 @@
-/* Colour pairings */
+/* Kleurcombinaties */
 
 .primary {
   background: var(--primary);
@@ -16,12 +16,12 @@
 }
 
 
-/* Apply everywhere */
+/* Overal toepassen */
 
 * {
   margin: 0rem;
   padding: 0rem;
-  box-sizing: border-box; /* Padding and border don't make a box bigger */
+  box-sizing: border-box; /* Opvulling en rand maken een vak niet groter */
 }
 
 html,
@@ -31,37 +31,37 @@ body {
   background: var(--page);
   color: var(--onpage);
   font: var(--body-font);
-  min-height: 100vh; /* Make the content fill the page so the footer is at the bottom */
+  min-height: 100vh; /* Laat de inhoud de pagina vullen zodat de voettekst onderaan staat */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-/* add a background image to body */
+/* voeg een achtergrondafbeelding toe aan de hoofdtekst */
 
 body {
   /*background-image: url('name.jpg');*/
 }
 
-/* The main content of the page between the header and footer */
+/* De hoofdinhoud van de pagina tussen de kop- en voettekst */
 main {
-  background: var(--primary); /* Colour the background */
-  color: var(--onprimary); /* Colour the text */
-  margin: 0 auto; /* Center if the browser is really wide */
-  min-width: 25rem; /* Don't let the content get too narrow */
-  max-width: 70rem; /*  Don't let the content get too wide */
+  background: var(--primary); /* Kleur de achtergrond */
+  color: var(--onprimary); /* Kleur de tekst */
+  margin: 0 auto; /* Centreren als de browser erg breed is */
+  min-width: 25rem; /* Laat de inhoud niet te smal worden */
+  max-width: 70rem; /* Laat de inhoud niet te breed worden */
   padding: 0;
-  padding-top: 0.5rem; /* Padding at the top */
-  margin-bottom: 1em; /* Gap before the footer */
+  padding-top: 0.5rem; /* Vulling bovenaan */
+  margin-bottom: 1em; /* Tussenruimte vóór de voettekst */
 }
 
-/* Header and footer element styles */
+/* Kop- en voettekst element stijlen */
 
 header,
 footer {
   text-align: center;
-  width: 100%; /* Fill the full width of the window */
-  margin: 0; /* Remove the default margin */
+  width: 100%; /* Vul de volledige breedte van het venster */
+  margin: 0; /* Verwijder de standaardmarge */
   min-height: 3rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -74,44 +74,44 @@ section {
   margin: 1rem auto;
 }
 
-/* Border styles */
+/* Randstijlen */
 
 .border-bottom {
-  border-bottom: 20px solid var(--detail); /* Add a solid */
+  border-bottom: 20px solid var(--detail); /* Voeg een ononderbroken lijn toe */
 }
 
 .border-top {
-  border-top: 10px solid var(--detail2); /* Add a solid line above the footer */
+  border-top: 10px solid var(--detail2); /* Voeg een ononderbroken lijn toe boven de voettekst */
 }
 
-/* Add a transparent effect */
+/* Voeg een transparantie-effect toe */
 
 .transparent {
   opacity: 0.95;
 }
 
-/* Styles just for h1 elements */
+/* Stijlen alleen voor h1-elementen */
 
 h1 {
-  font: var(--header-font); /* Font style stored in the header-font variable */
+  font: var(--header-font); /* Lettertype stijl opgeslagen in de kop-lettertype variabele */
   padding: 2rem;
-  margin: 0; /* Center if the browser is really wide */
+  margin: 0; /* Centreren als de browser erg breed is */
 }
 
-/* Styles just for h2 elements */
+/* Stijlen alleen voor h2-elementen */
 
 h2 {
-  font: var(--title-font); /* Font style stored in the title-font variable */
+  font: var(--title-font); /* Lettertype stijl opgeslagen in de title-font variabele */
 }
 
-/* Highlight key words in bold and apply an alternative text colour */
+/* Markeer sleutelwoorden vet en pas een alternatieve tekstkleur toe */
 
 strong {
-  color: var(--detail2); /* Text colour stored in the caption variable */
-  font-weight: bold; /* Makes text weight stronger than the default*/
+  color: var(--detail2); /* Tekst kleur opgeslagen in de bijschrift variabele */
+  font-weight: bold; /* Maakt tekstgewicht sterker dan de standaard*/
 }
 
-/* Style for ordered and unordered lists */
+/* Stijl voor geordende en ongeordende lijsten */
 
 ol,
 ul {
@@ -119,18 +119,18 @@ ul {
   padding-left: 2rem;
 }
 
-/* Padding around paragraphs */
+/* Opvulling rond alinea's */
 
 p {
   padding: 0.25rem 0.5rem;
 }
 
-/* Style for links */
+/* Stijl voor links */
 
 a:link,
 a:visited {
   font-weight: bold;
-  color: inherit; /* Use the colour of the parent element */
+  color: inherit; /* Gebruik de kleur van het bovenliggende element */
 }
 
 .xcenter {
@@ -143,10 +143,10 @@ a:visited {
   flex-flow: column;
 }
 
-/* Styles just for the .wrap class */
+/* Stijlen alleen voor de .wrap class */
 
 .wrap {
-  /* Make content wrap over mutiple rows */
+  /* Laat inhoud over meerdere rijen lopen */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -154,7 +154,7 @@ a:visited {
   box-sizing: border-box;
 }
 
-/* For creating fancy boxes */
+/* Voor het maken van mooie vakjes */
 
 .dashed-border {
   border: 0.25rem dashed var(--detail2);
@@ -164,14 +164,14 @@ a:visited {
   border: 0.25rem solid var(--detail2);
 }
 
-/* Styles for the div tags that are inside a .wrap class */
+/* Stijlen voor de div tags die zich in een .wrap class bevinden */
 
 .wrap > div {
   width: 14rem;
   padding: 0rem;
 }
 
-/* Styles for the img tags that are inside a .wrap class */
+/* Stijlen voor de img tags die zich in een .wrap class bevinden */
 
 .wrap > img {
   width: 14rem;
@@ -179,7 +179,7 @@ a:visited {
   padding: 0rem;
 }
 
-/* Styles for the p tags that are inside a .wrap class */
+/* Stijlen voor de p-tags die zich in een .wrap class bevinden */
 
 .wrap > p,
 .wrap > span {
@@ -188,14 +188,14 @@ a:visited {
   padding: 0rem;
 }
 
-/* Specific styles for this project */
+/* Specifieke stijlen voor dit project */
 
 .bigfont {
   font-size: 3rem;
 }
 
 .hugefont {
-  /* Used to make a large emoji */
+  /* Gebruikt om een grote emoji te maken */
   font-size: 6rem;
   text-align: center;
   padding: 1rem;
@@ -222,7 +222,7 @@ cite {
   font-size: small;
 }
 
-/* Specific styles for this project */
+/* Specifieke stijlen voor dit project */
 
 .tile {
   height: 9.4rem;
