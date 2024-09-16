@@ -1,12 +1,12 @@
   .spinme {
-  animation: rotate-center linear 8s 2; /* Time taken for animation and number of repetitions */
-  display: inline-block; /* Important to allow rotation */
+  animation: rotate-center lineair 8s 2; /* Tijd nodig voor animatie en aantal herhalingen */
+  display: inline-block; /* Belangrijk om rotatie mogelijk te maken */
 }
 
 @keyframes rotate-center {
-  /* The spin me animation code */
+  /* De spin-me-animatiecode */
   0% {
-    /* Rotate from 0 to 360 degrees */
+    /* Roteren van 0 tot 360 graden */
     transform: rotate(0);
   }
   100% {
@@ -15,33 +15,33 @@
 }
 
 .bounceme {
-  animation: bounce ease 2s 3; /* runs the 'bounce' animation with ease timing (slow start and end) for two seconds. Runs the animation three times. */
+  animation: bounce ease 2s 3; /* voert de 'bounce' animatie met 'ease timing' (langzame start en einde) uit gedurende twee seconden. Voert de animatie drie keer uit. */
   display: inline-block;
 }
 
 @keyframes bounce {
-  /* The bounce animation code */
+  /* De bounce-animatiecode */
   0% {
-    transform: scale(1, 1) translateY(0); /* Starting position and actual size */
+    transform: scale(1, 1) translateY(0); /* Beginpositie en werkelijke grootte */
   }
   10% {
-    transform: scale(1.1, 0.9) translateY(0); /* Grow width and shrink height for pre bounce squash effect */
+    transform: scale(1.1, 0.9) translateY(0); /* Breedte vergroten en hoogte verkleinen voor pre bounce squash effect */
   }
   30% {
-    transform: scale(1, 1) translateY(-6rem); /* Return to actual size and move emoji up 100px from current position */
+    transform: scale(1, 1) translateY(-6rem); /* Keer terug naar werkelijke grootte en verplaats emoji omhoog met 100px van de huidige positie */
   }
   50% {
-    transform: scale(1, 1) translateY(0); /* Move emoji back to starting position */
+    transform: scale(1, 1) translateY(0); /* Verplaats emoji terug naar de startpositie */
   }
 }
 
 .scaleme {
-  animation: scale ease 2s infinite; /* runs the 'scale' animation with ease timing (slow start and end) over a two second interval. Runs the animation forever. */
+  animation: scale ease 2s infinite; /* voert de'scale' animatie met 'ease timing' (langzame start en einde) uit gedurende twee seconden. Voert de animatie oneindig uit. */
   display: inline-block;
 }
 
 @keyframes scale {
-  /* The twinkle animation code */
+  /* De twinkle-animatiecode */
   0% {
     transform: scale(1, 1);
   }
@@ -65,7 +65,7 @@
 }
 
 @keyframes rollleft {
-  /* The roll animation code */
+  /* De rolanimatiecode */
   from {
     transform: translate(-60vw) rotate(0deg);
     transform-origin: center;
@@ -83,7 +83,7 @@
 }
 
 @keyframes rollright {
-  /* The roll animation code */
+  /* De rolanimatiecode */
   from {
     transform: translate(60vw) rotate(360deg);
     transform-origin: center;
@@ -105,7 +105,7 @@
 }
 
 @keyframes moveleft {
-  /* The roll animation code */
+  /* De rolanimatiecode */
   from {
     transform: translate(-60vw);
     transform-origin: center;
@@ -123,7 +123,7 @@
 }
 
 @keyframes moveright {
-  /* The roll animation code */
+  /* De rolanimatiecode */
   from {
     transform: translate(60vw);
     transform-origin: center;
