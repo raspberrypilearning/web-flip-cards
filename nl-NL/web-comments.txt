@@ -4,20 +4,20 @@ Kleurenfestival
 
 flip card
 
-Title shown in web browsers
+Titel die in webbrowsers wordt weergegeven
 
-Import fonts from Google
+Importeer lettertypen van Google
 
-Include CSS style file
+Voeg een CSS-stijlbestand toe
 
-The main content for the web page goes between the main tags
+De hoofdinhoud van de webpagina bevindt zich tussen de main tags
 
-A responsive section to contain the card
+Een responsieve sectie om de kaart te bevatten
 
-The card
+De kaart
 
-To control the flip
+Om de draaien
 
-The front card face
+De voorkant van de kaart
 
-The back card face
+De achterkant van de kaart
