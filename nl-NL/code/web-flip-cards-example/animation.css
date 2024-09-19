@@ -1,5 +1,5 @@
   .spinme {
-  animation: rotate-center lineair 8s 2; /* Tijd nodig voor animatie en aantal herhalingen */
+  animation: rotate-center linear 8s 2; /* Tijd nodig voor animatie en aantal herhalingen */
   display: inline-block; /* Belangrijk om rotatie mogelijk te maken */
 }
 
