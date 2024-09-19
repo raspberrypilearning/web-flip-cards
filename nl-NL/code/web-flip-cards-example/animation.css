@@ -1,0 +1,137 @@
+  .spinme {
+  animation: rotate-center linear 8s 2; /* Tijd nodig voor animatie en aantal herhalingen */
+  display: inline-block; /* Belangrijk om rotatie mogelijk te maken */
+}
+
+@keyframes rotate-center {
+  /* De spin-me-animatiecode */
+  0% {
+    /* Roteren van 0 tot 360 graden */
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bounceme {
+  animation: bounce ease 2s 3; /* voert de 'bounce' animatie met 'ease timing' (langzame start en einde) uit gedurende twee seconden. Voert de animatie drie keer uit. */
+  display: inline-block;
+}
+
+@keyframes bounce {
+  /* De bounce-animatiecode */
+  0% {
+    transform: scale(1, 1) translateY(0); /* Beginpositie en werkelijke grootte */
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0); /* Breedte vergroten en hoogte verkleinen voor pre bounce squash effect */
+  }
+  30% {
+    transform: scale(1, 1) translateY(-6rem); /* Keer terug naar werkelijke grootte en verplaats emoji omhoog met 100px van de huidige positie */
+  }
+  50% {
+    transform: scale(1, 1) translateY(0); /* Verplaats emoji terug naar de startpositie */
+  }
+}
+
+.scaleme {
+  animation: scale ease 2s infinite; /* voert de'scale' animatie met 'ease timing' (langzame start en einde) uit gedurende twee seconden. Voert de animatie oneindig uit. */
+  display: inline-block;
+}
+
+@keyframes scale {
+  /* De twinkle-animatiecode */
+  0% {
+    transform: scale(1, 1);
+  }
+  20% {
+    transform: scale(1.1, 1.1);
+  }
+  40% {
+    transform: scale(1.2, 1.2);
+  }
+  60% {
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    transform: scale(1, 1);
+  }
+}
+
+.rollmeleft {
+  animation: rollleft ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes rollleft {
+  /* De rolanimatiecode */
+  from {
+    transform: translate(-60vw) rotate(0deg);
+    transform-origin: center;
+  }
+
+  to {
+    transform: translate(0vw) rotate(360deg);
+    transform-origin: center;
+  }
+}
+
+.rollmeright {
+  animation: rollright ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes rollright {
+  /* De rolanimatiecode */
+  from {
+    transform: translate(60vw) rotate(360deg);
+    transform-origin: center;
+  }
+
+  to {
+    transform: translate(0vw) rotate(00deg);
+    transform-origin: center;
+  }
+}
+
+.flipme {
+  transform: rotateY(180deg);
+}
+
+.movemeleft {
+  animation: moveleft ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes moveleft {
+  /* De rolanimatiecode */
+  from {
+    transform: translate(-60vw);
+    transform-origin: center;
+  }
+
+  to {
+    transform: translate(0vw);
+    transform-origin: center;
+  }
+}
+
+.movemeright {
+  animation: moveright ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes moveright {
+  /* De rolanimatiecode */
+  from {
+    transform: translate(60vw);
+    transform-origin: center;
+  }
+
+  to {
+    transform: translate(0vw);
+    transform-origin: center;
+  }
+}
+

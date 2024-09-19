@@ -1,0 +1,137 @@
+  .spinme {
+  animation: rotate-center linear 8s 2; /* Temps nécessaire à l'animation et nombre de répétitions*/
+  display: inline-block; /* Important pour permettre la rotation */
+}
+
+@keyframes rotate-center {
+  /* Le code de l'animation spin me */
+  0% {
+    /* Rotation de 0 à 360 degrés */
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bounceme {
+  animation: bounce ease 2s 3; /* exécute l'animation 'bounce' avec un timing facile (début et fin lents) pendant deux secondes. Exécute l'animation trois fois. */
+  display: inline-block;
+}
+
+@keyframes bounce {
+  /* Le code de l'animation de rebond */
+  0% {
+    transform: scale(1, 1) translateY(0); /* Position de départ et taille réelle */
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0); /* Augmenter la largeur et réduire la hauteur pour un effet d'écrasement avant le rebond */
+  }
+  30% {
+    transform: scale(1, 1) translateY(-6rem); /* Revenir à la taille réelle et déplacer l'emoji de 100 pixels par rapport à la position actuelle */
+  }
+  50% {
+    transform: scale(1, 1) translateY(0); /* Remettre l'emoji à la position de départ */
+  }
+}
+
+.scaleme {
+  animation: scale ease 2s infinite; /* exécute l'animation 'scale' avec un timing facile (début et fin lents) sur un intervalle deux secondes. Exécute l'animation indéfiniment. */
+  display: inline-block;
+}
+
+@keyframes scale {
+  /* Le code d'animation de scintillement */
+  0% {
+    transform: scale(1, 1);
+  }
+  20% {
+    transform: scale(1.1, 1.1);
+  }
+  40% {
+    transform: scale(1.2, 1.2);
+  }
+  60% {
+    transform: scale(1.1, 1.1);
+  }
+  80% {
+    transform: scale(1, 1);
+  }
+}
+
+.rollmeleft {
+  animation: rollleft ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes rollleft {
+  /* Le code de l'animation du roulement */
+  from {
+    transform: translate(-60vw) rotate(0deg);
+    transform-origin: center;
+  }
+
+  to {
+    transform: translate(0vw) rotate(360deg);
+    transform-origin: center;
+  }
+}
+
+.rollmeright {
+  animation: rollright ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes rollright {
+  /* Le code de l'animation du roulement */
+  from {
+    transform: translate(60vw) rotate(360deg);
+    transform-origin: center;
+  }
+
+  to {
+    transform: translate(0vw) rotate(00deg);
+    transform-origin: center;
+  }
+}
+
+.flipme {
+  transform: rotateY(180deg);
+}
+
+.movemeleft {
+  animation: moveleft ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes moveleft {
+  /* Le code de l'animation du roulement */
+  from {
+    transform: translate(-60vw);
+    transform-origin: center;
+  }
+
+  to {
+    transform: translate(0vw);
+    transform-origin: center;
+  }
+}
+
+.movemeright {
+  animation: moveright ease 8s 1;
+  display: inline-block;
+}
+
+@keyframes moveright {
+  /* Le code de l'animation du roulement */
+  from {
+    transform: translate(60vw);
+    transform-origin: center;
+  }
+
+  to {
+    transform: translate(0vw);
+    transform-origin: center;
+  }
+}
+
