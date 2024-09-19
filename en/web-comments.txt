@@ -3,3 +3,21 @@ Rainbow forest
 Colour festival
 
 flip card
+
+Title shown in web browsers
+
+Import fonts from Google
+
+Include CSS style file
+
+The main content for the web page goes between the main tags
+
+A responsive section to contain the card
+
+The card
+
+To control the flip
+
+The front card face
+
+The back card face
