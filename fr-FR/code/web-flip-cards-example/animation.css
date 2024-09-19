@@ -22,16 +22,16 @@
 @keyframes bounce {
   /* Le code de l'animation de rebond */
   0% {
-    transform: scale(1, 1) translateY(0); /* Position de départ et taille réelle */
+    transform: scale(1, 1) translateY(0); /* Position de départ et taille réelle */
   }
   10% {
-    transform: scale(1.1, 0.9) translateY(0); /* Augmenter la largeur et réduire la hauteur pour un effet d'écrasement avant le rebond */
+    transform: scale(1.1, 0.9) translateY(0); /* Augmenter la largeur et réduire la hauteur pour un effet d'écrasement avant le rebond */
   }
   30% {
-    transform: scale(1, 1) translateY(-6rem); /* Revenir à la taille réelle et déplacer l'emoji de 100 pixels par rapport à la position actuelle */
+    transform: scale(1, 1) translateY(-6rem); /* Revenir à la taille réelle et déplacer l'emoji de 100 pixels par rapport à la position actuelle */
   }
   50% {
-    transform: scale(1, 1) translateY(0); /* Remettre l'emoji à la position de départ */
+    transform: scale(1, 1) translateY(0); /* Remettre l'emoji à la position de départ */
   }
 }
 
