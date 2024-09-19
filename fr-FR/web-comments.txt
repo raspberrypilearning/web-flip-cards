@@ -4,20 +4,20 @@ Fête des couleurs
 
 carte à retourner
 
-Title shown in web browsers
+Titre affiché dans les navigateurs web
 
-Import fonts from Google
+Importer des polices depuis Google
 
-Include CSS style file
+Inclure le fichier de style CSS
 
-The main content for the web page goes between the main tags
+Le contenu principal de la page web se situe entre les balises principales
 
-A responsive section to contain the card
+Une section réactive pour contenir la carte
 
-The card
+La carte
 
-To control the flip
+Pour contrôler le retournement
 
-The front card face
+Le recto de la carte
 
-The back card face
+Le verso de la carte
