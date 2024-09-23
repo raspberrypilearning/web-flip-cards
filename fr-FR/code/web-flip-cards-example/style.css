@@ -1,0 +1,286 @@
+/* Associations de couleurs */
+
+.primary {
+  background: var(--primary);
+  color: var(--onprimary);
+}
+
+.secondary {
+  background: var(--secondary);
+  color: var(--onsecondary);
+}
+
+.tertiary {
+  background: var(--tertiary);
+  color: var(--ontertiary);
+}
+
+
+/* Appliquer partout */
+
+* {
+  margin: 0rem;
+  padding: 0rem;
+  box-sizing: border-box; /* Remplissage et bordure ne rendent pas une boite plus grande */
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0rem auto;
+  background: var(--page);
+  color: var(--onpage);
+  font: var(--body-font);
+  min-height: 100vh; /* Faire remplir le contenu de la page pour que le pied de page soit en bas */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* ajoute une image d'arrière-plan au corps */
+
+body {
+  /*background-image: url('name.jpg');*/
+}
+
+/* Le contenu principal de la page entre l'en-tête et le pied de page */
+main {
+  background: var(--primary); /* Colore l'arrière-plan */
+  color: var(--onprimary); /* Colore le texte */
+  margin: 0 auto; /* Centre si le navigateur est vraiment large */
+  min-width: 25rem; /* Ne laisse pas le contenu devenir trop étroit */
+  max-width: 70rem; /* Ne laisse pas le contenu devenir trop large */
+  padding: 0;
+  padding-top: 0.5rem; /* Remplissage en haut */
+  margin-bottom: 1em; /* Espace avant le pied de page */
+}
+
+/* Styles des éléments d'en-tête et de pied de page */
+
+header,
+footer {
+  text-align: center;
+  width: 100%; /* Remplit toute la largeur de la fenêtre */
+  margin: 0; /* Supprime la marge par défaut */
+  min-height: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Styles de sections */
+
+section {
+  padding: 1rem 2rem;
+  margin: 1rem auto;
+}
+
+/* Styles de bordure */
+
+.border-bottom {
+  border-bottom: 20px solid var(--detail); /* Ajoute un solide */
+}
+
+.border-top {
+  border-top: 10px solid var(--detail2); /* Ajoute une ligne continue au-dessus du pied de page */
+}
+
+/* Ajouter un effet de transparence */
+
+.transparent {
+  opacity: 0.95;
+}
+
+/* Styles uniquement pour les éléments h1 */
+
+h1 {
+  font: var(--header-font); /* Style de police stocké dans la variable header-font */
+  padding: 2rem;
+  margin: 0; /* Centre si le navigateur est vraiment large */
+}
+
+/* Styles uniquement pour les éléments h2 */
+
+h2 {
+  font: var(--title-font); /* Style de police stocké dans la variable title-font */
+}
+
+/* Surligner les mots clés en gras et appliquer une couleur de texte alternative */
+
+strong {
+  color: var(--detail2); /* Couleur du texte stockée dans la variable de légende */
+  font-weight: bold; /* Renforce le poids du texte par rapport à la valeur par défaut*/
+}
+
+/* Style pour les listes ordonnées et non ordonnées */
+
+ol,
+ul {
+  text-align: left;
+  padding-left: 2rem;
+}
+
+/* Remplissage autour des paragraphes */
+
+p {
+  padding: 0.25rem 0.5rem;
+}
+
+/* Style pour les liens */
+
+a:link,
+a:visited {
+  font-weight: bold;
+  color: inherit; /* Utilise la couleur de l'élément parent */
+}
+
+.xcenter {
+  text-align: center;
+}
+
+.ycenter {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+}
+
+/* Styles uniquement pour la classe .wrap */
+
+.wrap {
+  /* Faire en sorte que le contenu s'étende sur plusieurs lignes */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Pour créer des boites fantaisie */
+
+.dashed-border {
+  border: 0.25rem dashed var(--detail2);
+}
+
+.solid-border {
+  border: 0.25rem solid var(--detail2);
+}
+
+/* Styles pour les balises div qui se trouvent à l'intérieur d'une classe .wrap */
+
+.wrap > div {
+  width: 14rem;
+  padding: 0rem;
+}
+
+/* Styles pour les balises img qui se trouvent à l'intérieur d'une classe .wrap */
+
+.wrap > img {
+  width: 14rem;
+  display: block;
+  padding: 0rem;
+}
+
+/* Styles pour les balises p qui se trouvent à l'intérieur d'une classe .wrap */
+
+.wrap > p,
+.wrap > span {
+  width: 14rem;
+  display: block;
+  padding: 0rem;
+}
+
+/* Styles spécifiques pour ce projet */
+
+.bigfont {
+  font-size: 3rem;
+}
+
+.hugefont {
+  /* Utilisé pour faire un grand emoji */
+  font-size: 6rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.wrap .narrow {
+  width: 10rem;
+}
+
+.wrap .wide {
+  width: 20rem;
+}
+
+blockquote {
+  font: var(--quote-font);
+  color: var(--detail);
+  text-align: center;
+  padding: 0rem;
+  max-width: 25rem;
+}
+
+cite {
+  color: var(--detail);
+  font-size: small;
+}
+
+/* Styles spécifiques pour ce projet */
+
+.tile {
+  height: 9.4rem;
+}
+
+.rounded {
+  border-radius: 1rem;
+}
+
+.gradient1 {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--secondary),
+    var(--detail)
+  );
+  color: var(--onsecondary);
+}
+
+.gradient2 {
+  background-image: linear-gradient(
+    to top right,
+    var(--tertiary),
+    var(--detail2)
+  );
+  color: var(--ontertiary);
+}
+
+.wrap .card {
+  width: 10rem;
+  height: 10rem;
+  border: 0.1rem solid transparent;
+}
+
+.card-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  perspective: 60rem;
+}
+
+.card:hover .card-content {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card p {
+  padding: 0.5rem;
+}
+
+img {
+  width: 9rem;
+}

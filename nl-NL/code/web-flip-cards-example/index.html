@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Titel die in webbrowsers wordt weergegeven -->
+    <title>De titel van mijn website</title>
+
+    <!-- Importeer lettertypen van Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Codystar:wght@300&family=Creepster&family=Eater&family=Faster+One&family=Finger+Paint&family=Flavors&family=Freckle+Face&family=Fredericka+the+Great&family=Gorditas&family=Hanalei+Fill&family=Lobster&family=Luckiest+Guy&family=Miltonian&family=Monoton&family=Ranchers&family=Rubik+Moonrocks&family=Shrikhand&family=Spirax&family=Titan+One&Bebas+Neue&Cairo&display=swap"
+      rel="stylesheet"
+    />
+    
+    <!-- Voeg een CSS-stijlbestand toe -->
+
+     <link href="style.css" rel="stylesheet" type="text/css" /> 
+     <link href="animation.css" rel="stylesheet" type="text/css" /> 
+     <link href="festival.css" rel="stylesheet" type="text/css" /> 
+  </head>
+
+  <body>
+    <!-- De hoofdinhoud van de webpagina bevindt zich tussen de hoofdtags -->
+    <main>
+      <section class="wrap"> <!-- Een responsieve sectie om de kaart te bevatten -->
+          <div class="card"> <!-- De kaart -->
+              <div class="card-content"> <!-- De flip-control -->
+                  <div class="card-face secondary"> <!-- De voorkant van de kaart -->
+                    <p>Regenboogbos</p>
+                    <img src="rainbow-forest.JPG">
+                  </div>
+                
+                  <div class="card-face flipme tertiary"> <!-- De achterkant van de kaart -->
+                    <p>Kleurenfestival</p>
+                    <img src="colour-festival.jpg">
+                  </div>
+              </div>
+          </div>
+          
+          <div class="card"> <!-- De kaart -->
+              <div class="card-content"> <!-- De flip-control -->
+                  <div class="card-face tertiary rounded dashed-border"> <!-- De voorkant van de kaart -->
+                    <p class="hugefont">🦁</p>
+                  </div>
+                  <div class="card-face flipme secondary rounded solid-border"> <!-- De achterkant van de kaart -->
+                    <p class="hugefont">🐱</p>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="card"> <!-- De kaart -->
+              <div class="card-content"> <!-- De flip-control -->
+                  <div class="card-face gradient1 ycenter"> <!-- De voorkant van de kaart -->
+                    <h2>flip card</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                  </div>
+                
+                  <div class="card-face flipme gradient2 ycenter"> <!-- De achterkant van de kaart -->
+                   <h2>flip card</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </main>
+  </body>
+</html>
